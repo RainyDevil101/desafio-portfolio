@@ -11847,7 +11847,7 @@ textarea.form-control-lg {
 html {
   box-sizing: border-box;
   font-size: 62.5%;
-  text-wrap: ba;
+  text-wrap: pretty;
   font-family: "Roboto";
 }
 
@@ -11869,6 +11869,36 @@ img {
   background-color: white;
 }
 
+.row {
+  width: 100%;
+}
+
+.btn {
+  box-shadow: 3px 4px 11px rgba(0, 0, 0, 0.75);
+}
+
+.box-shadow {
+  box-shadow: 3px 4px 11px rgba(0, 0, 0, 0.75);
+}
+
+h2.text-shadowed {
+  box-shadow: 3px 4px 11px rgba(0, 0, 0, 0.75);
+  color: #0047ab;
+  background-color: white;
+  display: inline-block;
+}
+
+h3.text-shadowed {
+  box-shadow: 3px 4px 11px rgba(0, 0, 0, 0.75);
+  color: white;
+  background-color: #0047ab;
+  display: inline-block;
+}
+
+.form-control {
+  margin: auto;
+}
+
 h1,
 h2,
 h3,
@@ -11876,6 +11906,7 @@ h4,
 p {
   margin: 0;
   padding: 0;
+  color: white;
 }
 
 p {
@@ -11887,23 +11918,85 @@ li {
 }
 
 .header {
-  height: 100vh;
-  margin-top: 5.4rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 15%;
 }
 
 .abilities {
-  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
 }
 
 .logo {
   font-style: italic;
+}
+
+.navbar-nav .nav-link:hover {
+  transition: all ease-in 0.1s;
+  text-shadow: 2px 2px 4px rgba(0, 71, 171, 0.5);
+}
+
+.navbar {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.8);
+}
+
+.abilities {
+  margin-top: 15%;
+}
+
+.row {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-skill {
+  justify-content: center;
+  box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 4px 11px 0px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 1200px) {
+  .row {
+    justify-content: center;
+  }
+  .item-skill {
+    margin-bottom: 2rem;
+    justify-content: space-around;
+  }
+}
+.input-form {
+  margin-bottom: 1rem;
+}
+
+.contact--item {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 1rem auto;
+}
+.contact--item p {
+  margin-left: 1rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,18 +1,27 @@
-@mixin section {
-  height: 100vh;
-}
-.header {
-  @include section; 
-  margin-top: 5.4rem;
+@mixin base {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
+.header {
+  @include base;
+  margin-top: 15%;
+}
+
 .abilities {
-  @include section;
-  display: flex;
+  @include base;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+}
+
+.projects {
+  @include base;
+  flex-direction: column;
+  margin-top:10rem;
+}
+
+.contact {
+  @include base;
+  flex-direction: column;
+  margin-top: 10rem;
 }
