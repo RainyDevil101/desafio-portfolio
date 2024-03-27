@@ -1,0 +1,18 @@
+@mixin section {
+  height: 100vh;
+}
+.header {
+  @include section; 
+  margin-top: 5.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.abilities {
+  @include section;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

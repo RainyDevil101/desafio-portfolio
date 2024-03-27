@@ -1,0 +1,43 @@
+@use './typography';
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  text-wrap: ba;
+  font-family: typography.$roboto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+img {
+  width: 100%;
+}
+
+.active {
+  background-color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 2.6rem;
+}
+
+li {
+  list-style: none;
+}
